@@ -13,8 +13,8 @@ export default function MyIssues() {
   const [scheduleMeet, setScheduleMeet] = React.useState(false);
   const [inputValue, setInputValue] = React.useState('');
   const [meetingOptions, setMeetingOptions] = React.useState(['', '', '']);
-  const [agendaValue, setAgendaValue] = React.useState(''); 
-  const [dateTimeValue, setDateTimeValue] = React.useState(''); 
+  // const [agendaValue, setAgendaValue] = React.useState(''); 
+  // const [dateTimeValue, setDateTimeValue] = React.useState(''); 
 
   const toggleMeetPopup = () => {
     setScheduleMeet(popup => !popup);
@@ -32,8 +32,8 @@ export default function MyIssues() {
 
   const submitDetails = () => {
     
-    setAgendaValue(inputValue);
-    setDateTimeValue(meetingOptions[0]);
+    // setAgendaValue(inputValue);
+    // setDateTimeValue(meetingOptions[0]);
 
     setInputValue('');
     setMeetingOptions(['', '', '']);
@@ -73,11 +73,10 @@ export default function MyIssues() {
         </div>
       </div>
 
-      {/* These are the values which i want u to send to the backend*/}
-      <div className="agenda-and-date-time">
+      {/* <div className="agenda-and-date-time">
         <p>Agenda: {agendaValue}</p>
         <p>Date and Time: {dateTimeValue}</p>
-      </div>
+      </div> */}
     </div>
   );
 }

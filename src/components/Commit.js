@@ -31,7 +31,7 @@ export default function Commit(props) {
   return (
     <div>
     { isCommitNotSubmitted?( 
-        <div>
+        <div className = 'whole-card'>
           <MDBCard alignment='center' className='main-card'>
           <MDBCardHeader className='MDBCardHeader'>{props.commit.commitNumber}</MDBCardHeader>
           <MDBCardBody>
